@@ -24,7 +24,7 @@ text_var = [[StringVar() for i in range(3)] for j in range(3)]
 entries = [[Entry(window, width=5, textvariable=text_var[i][j]) for j in range(3)] for i in range(3)]
 output = [[Label(window, width=5, text="", bg='white') for i in range(3)] for j in range(3)]
 Label(window, text="\tThis program is a mini calculator of the inverse of 3x3 Matrices :\n", font=('arial', 10, 'bold'), bg="bisque2").place(x=20, y=10)
-Label(window, text="Created this code by:\tMadani Mohamed El-Habib \tHerrouel Nor El-yacine  \tBenkahla Mohamed", font=('arial', 10, 'bold'), bg="bisque2").place(x=20, y=30)
+Label(window, text="Created this code by:\tMadani Mohamed El-Habib", font=('arial', 10, 'bold'), bg="bisque2").place(x=20, y=30)
 Label(window, text="Enter matrix :", font=('arial', 10, 'bold'), bg="bisque2").place(x=20, y=50)
 for i, j in [[_i, _j] for _i in range(3) for _j in range(3)]:
     output[i][j].place(x=200 + j * 70, y=80 + i * 50)
